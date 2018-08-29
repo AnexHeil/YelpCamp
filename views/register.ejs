@@ -1,0 +1,25 @@
+<%include partials/header.ejs%>
+<div class = "container">
+    <form class="form-signin" action = "/register" method = "POST">
+      <h1 class=" text-center h3 mb-3 font-weight-normal">Please sign up</h1>
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input type="text" id="inputUsername" class="form-control" name = "username" placeholder="Username" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" name = "password" placeholder="Password" required>
+      <label for="inputAdminCode" class = "sr-only">Admin code</label>
+      <input class = "form-control" id = "inputAdminCode" type="text" name="adminCode" value="" placeholder = "Admin code">
+      <label for="inputIMG" class = "sr-only">Avatar image URL</label>
+      <input class = "form-control" id = "inputIMG" type="password" name="avatar" value="" placeholder = "Avatar image URL">
+      <label for="inputFirstName" class = "sr-only">First name</label>
+      <input class = "form-control" id = "inputFirstName" type="text" name="firstName" value="" placeholder = "First name">
+      <label for="inputLastName" class = "sr-only">Admin code</label>
+      <input class = "form-control" id = "inputLastName" type="text" name="lastName" value="" placeholder = "Last name">
+      <label for="inputEmail" class = "sr-only">Email</label>
+      <input class = "form-control" id = "inputEmail" type="email" name="email" value="" placeholder = "Email adress">
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+    <div class = "form-signin">
+        <a href="/campgrounds">Go back</a>
+    </div>
+</div>
+<%include partials/footer.ejs%>

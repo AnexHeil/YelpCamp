@@ -1,0 +1,15 @@
+<%include ../partials/header.ejs%>
+<div class = "container">
+    <form class="form-signin" action = "/campgrounds" method = "POST">
+        <h1 class=" text-center h3 mb-3 font-weight-normal">Create new campground</h1>
+        <input type="text" id="inputUsername" class="form-control" name = "name" placeholder="Name" required autofocus>
+        <input type="text" class="form-control" name = "image" placeholder="campground image URL" required>
+        <input type="text" class="form-control" name = "description" placeholder="Description" required>
+        <input type="number" class="form-control" name = "price" placeholder="Price per night" min = "0.01" step = "0.01" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+    </form>
+    <div class = "form-signin">
+        <a href="/campgrounds">Go back</a>
+    </div>
+</div>
+<%include ../partials/footer.ejs%>
